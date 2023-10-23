@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+
+/* Meu primeiro Comentário */
+/* Reset do CSS para o navegador*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+   
+/* Corpo do Site */
+body{
+    height: 100%; /* altura */
+    width: 100%; /* largura */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#000000, #bebebe);
+    background-repeat: no-repeat;
+}
+
+/* Logo  */ 
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 200px;
+    border-radius: 200px;
+    margin-top: 30px;
+    margin-top: 150px;
+}
+/* Titulo */ 
+.nome{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff8f44;
+    font-family: 'Metal Mania', cursive;
+}
+/* Redes Sociais Ícones */
+.redes-sociais{
+    margin-top: 100px;    /* margem superior  */
+    justify-content: center;   /* centralizar texto   */
+    align-items: center;
+}
+
+.Icone, .email{
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.50);
+    margin: 5px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.Icone i,  .email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.Sobre-mim{
+    position: absolute; 
+    top: 10px;  /* move  o topo h2 para o centro vertical */
+    /* para valores em porcentagem - transform: ; */
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif monospace;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+    
+}
+
+.text{
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Victor Mono', monospace;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 35px;
+    width: 700px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 24px;
+    color: rgb(237, 233, 233);
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.softwares{
+    font-weight: 600;
+    justify-content: center;
+    display:flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: #000000;
+
+}
+
+.softwares-usados{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.subtitulo{
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 3px 6px 9px;
+    
+}
+
+.projetos{
+    margin: 40px;
+    flex-direction: column;
+}
+
+.item{
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    border: 1px solid #272727(0,0,0,1);
+    border-radius: 10px;
+    width: 650px;
+    height: 25px;
+    font-size: 18px;
+    background: #c7bdbd;
+    box-shadow: 0 5px 5px rgba(0,0,0,1);
+    
+}
+
+.item:hover{
+    transition: 0.2s;
+    background-color: rgb(255, 94, 0);
+}
+
+#movie{padding: 15px;
+    margin: auto;
+    display: none;
+}
+
+#movie.active{
+    display: block;
+    
+}
+
+/* resolução 700px */
+@media (max-width:700px){
+    .imagem img{ 
+        width: 700px;
+        border-radius: 200px;
+        margin-top: 25px;
+
+     }
+
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 25px;
+    }
+
+    .text{
+        width: 290px;
+        height: 500px;
+    }
+
+    .linguagem img{
+        width: 150px;
+    }
+    .softwares-usados img{
+        width: 400px;
+
+    }
+
+    .subtitulo{
+        font-size: 20px;
+
+    }
+
+    .item{
+        width: 350px;
+    }
+
+    #movie{
+    width: 350px;
+    }
+
+} /* fim da resolução 700px */
+
+/* Resolução
+
+
+
+
+
+
+
